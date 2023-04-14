@@ -1,0 +1,4 @@
+
+interface Contact {
+    getContact(): Contact;
+}
