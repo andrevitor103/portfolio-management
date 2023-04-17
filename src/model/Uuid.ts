@@ -5,7 +5,7 @@ export class Uuid {
     private value: string
 
     constructor(value: string) {
-        if (uuidValidate(value)) 
+        if (!uuidValidate(value)) 
         {
             throw Error(`Value must be uuid v4 valid. Received value: ${value}`)
         }
@@ -14,5 +14,9 @@ export class Uuid {
 
     static generateRandom(): Uuid {
         return new Uuid(uuid())
+    }
+
+    public getValue(): string {
+        return this.value
     }
 }

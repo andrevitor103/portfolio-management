@@ -11,7 +11,7 @@ export class Cpf implements Document {
     }
 
     getDocument(): Document {
-        return new Cpf(this.value);
+        return this
     }
 
     static validate(value: string): boolean {

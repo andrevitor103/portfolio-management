@@ -11,7 +11,7 @@ export class Cnpj implements Document {
     }
 
     getDocument(): Document {
-        return new Cnpj(this.value);
+        return this
     }
 
     static validate(value: string): boolean {
