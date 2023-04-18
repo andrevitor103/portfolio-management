@@ -1,7 +1,7 @@
-import { Contact } from "../model/Contact";
-import { ContactFactory } from "../model/ContactFactory";
+import { Contact } from "../../model/Contact";
+import { ContactFactory } from "../../model/ContactFactory";
 
-export class CustomerDTO {
+export class CustomerInputDTO {
     constructor(
         readonly name: string,
         readonly document: string,
@@ -9,10 +9,10 @@ export class CustomerDTO {
     ) {
     }
 
-    static create(data: any): CustomerDTO {
+    static create(data: any): CustomerInputDTO {
         const contacts = data.contacts.map((item: string) => {
             return ContactFactory.create(item)
         })
-        return new CustomerDTO(data.name, data.document, contacts)
+        return new CustomerInputDTO(data.name, data.document, contacts)
     }
 }

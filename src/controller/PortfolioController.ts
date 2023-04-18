@@ -1,6 +1,6 @@
 import { Portfolio } from "../model/Portfolio"
 import { PortfolioRepository } from "../repository/PortfolioRepository"
-import { PortfolioListView } from "../view/PortfolioListView"
+import { PortfolioListView } from "../view/portfolio/PortfolioListView"
 
 import { Request, Response } from "express"
 

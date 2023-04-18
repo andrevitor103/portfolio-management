@@ -1,6 +1,3 @@
-import { Customer } from "../model/Customer";
-import { Portfolio } from "../model/Portfolio";
-
 export class PortfolioItemListView {
     private constructor(
         readonly customer_id: string,

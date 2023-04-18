@@ -13,6 +13,10 @@ export class Cnpj implements Document {
     getDocument(): Document {
         return this
     }
+    
+    getValue(): string {
+        return this.value
+    }
 
     static validate(value: string): boolean {
         return value.length == 14;

@@ -1,13 +1,17 @@
 import { Contact } from "./Contact";
 
 export class Phone implements Contact {
-    private value: string
+    private phone: string
     constructor(value: string) {
-        this.value = value
+        this.phone = value
     }
     
     getContact(): Contact {
         return this
+    }
+    
+    getValue(): string {
+        return this.phone
     }
     
     static validate(value: string): boolean {

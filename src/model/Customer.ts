@@ -30,4 +30,12 @@ export class Customer
     public getName(): string {
         return this.name
     }
+
+    public getContacts(): Array<Contact> {
+        return this.contacts
+    }
+
+    public getDocument(): Document {
+        return this.document
+    }
 }

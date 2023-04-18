@@ -1,5 +1,4 @@
-import { Customer } from "../model/Customer";
-import { Portfolio } from "../model/Portfolio";
+import { Customer } from "../../model/Customer";
 import { PortfolioItemListView } from "./PortfolioItemListView";
 
 export class PortfolioListView {
